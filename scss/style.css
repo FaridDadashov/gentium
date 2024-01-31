@@ -1,0 +1,837 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #1B1B1B;
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logobox a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+header .services ul li {
+  list-style: none;
+}
+header .services ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 20px;
+  position: relative;
+  font-weight: bold;
+}
+header .services ul li a:hover::after {
+  width: 50%;
+}
+header .services ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #E9204F;
+  left: 0;
+  top: 100%;
+  transition: 0.5s;
+}
+
+#services {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#services::before {
+  width: 50px;
+  height: 3px;
+  background-color: #E9204F;
+  top: -50px;
+  content: "";
+  position: absolute;
+  margin-left: 150px;
+}
+#services p {
+  font-size: 60px;
+  color: #1B1B1B;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 770;
+  margin-top: 10%;
+  margin-left: 150px;
+}
+#services h3 {
+  font-size: 14px;
+  color: #E9204F;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  margin-left: 150px;
+}
+#services .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 150px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+#services .boxes .digital {
+  display: flex;
+  flex-wrap: wrap;
+}
+#services .boxes .digital .box1 {
+  background-color: rgba(27, 27, 27, 0.0823529412);
+  width: 380px;
+  height: 100px;
+  position: relative;
+  transition: 0.4s ease;
+}
+#services .boxes .digital .box1 span {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  transform: translateX(-100%);
+  font-weight: 400;
+  transition: 0.4s ease;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transition: 0.4s ease;
+}
+#services .boxes .digital .box1 span i {
+  color: #7F7F7F;
+  font-size: 40px;
+}
+#services .boxes .digital .box1 p {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  padding: 0;
+  left: 10%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-10%, -50%);
+  margin: 0;
+  transition: 0.4s ease;
+}
+#services .boxes .digital .box1:hover {
+  background-color: #E9204F;
+}
+#services .boxes .digital .box1:hover p {
+  left: 15%;
+  color: white;
+}
+#services .boxes .digital .box1:hover span {
+  right: 3%;
+}
+#services .boxes .digital .box1:hover i {
+  font-size: 50px;
+}
+#services .boxes .digital .box1 i {
+  color: white;
+  left: 5%;
+  top: 50%;
+  transform: translate(-10%, -50%);
+  position: absolute;
+  transition: 0.4s ease;
+}
+#services .boxes .digital .box2 {
+  margin-left: 40px;
+  background-color: rgba(27, 27, 27, 0.0823529412);
+  width: 380px;
+  height: 100px;
+  position: relative;
+  transition: 0.2s ease;
+}
+#services .boxes .digital .box2 span {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  transform: translateX(-100%);
+  font-size: 40px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+#services .boxes .digital .box2 p {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  margin-left: -20px;
+}
+#services .boxes .digital .box2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#services .boxes .digital .box2:hover {
+  background-color: #E9204F;
+}
+#services .boxes .digital .box2:hover p {
+  margin-left: 40px;
+}
+#services .boxes .digital .box2:hover span {
+  margin-left: 5px;
+  color: white;
+}
+#services .boxes .digital .box3 {
+  margin-left: 40px;
+  background-color: rgba(27, 27, 27, 0.0823529412);
+  width: 380px;
+  height: 100px;
+  position: relative;
+  transition: 0.2s ease;
+}
+#services .boxes .digital .box3 span {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  transform: translateX(-100%);
+  font-size: 40px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+#services .boxes .digital .box3 p {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  margin-left: -20px;
+}
+#services .boxes .digital .box3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#services .boxes .digital .box3:hover {
+  background-color: #E9204F;
+}
+#services .boxes .digital .box3:hover p {
+  margin-left: 40px;
+}
+#services .boxes .digital .box3:hover span {
+  margin-left: 5px;
+  color: white;
+}
+#services .boxes .conten {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -40px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+#services .boxes .conten .box4 {
+  margin-left: 40px;
+  background-color: rgba(27, 27, 27, 0.0823529412);
+  width: 380px;
+  height: 100px;
+  position: relative;
+  transition: 0.2s ease;
+}
+#services .boxes .conten .box4 span {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  transform: translateX(-100%);
+  font-size: 40px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+#services .boxes .conten .box4 p {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  margin-left: -20px;
+}
+#services .boxes .conten .box4::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#services .boxes .conten .box4:hover {
+  background-color: #E9204F;
+}
+#services .boxes .conten .box4:hover p {
+  margin-left: 40px;
+}
+#services .boxes .conten .box4:hover span {
+  margin-left: 5px;
+  color: white;
+}
+#services .boxes .conten .box5 {
+  margin-left: 40px;
+  background-color: rgba(27, 27, 27, 0.0823529412);
+  width: 380px;
+  height: 100px;
+  position: relative;
+  transition: 0.2s ease;
+}
+#services .boxes .conten .box5 span {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  transform: translateX(-100%);
+  font-size: 40px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+#services .boxes .conten .box5 p {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  margin-left: -20px;
+}
+#services .boxes .conten .box5::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#services .boxes .conten .box5:hover {
+  background-color: #E9204F;
+}
+#services .boxes .conten .box5:hover p {
+  margin-left: 40px;
+}
+#services .boxes .conten .box5:hover span {
+  margin-left: 5px;
+  color: white;
+}
+#services .boxes .conten .box6 {
+  margin-left: 40px;
+  background-color: rgba(27, 27, 27, 0.0823529412);
+  width: 380px;
+  height: 100px;
+  position: relative;
+  transition: 0.2s ease;
+}
+#services .boxes .conten .box6 span {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  transform: translateX(-100%);
+  font-size: 40px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+#services .boxes .conten .box6 p {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  margin-left: -20px;
+}
+#services .boxes .conten .box6::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#services .boxes .conten .box6:hover {
+  background-color: #E9204F;
+}
+#services .boxes .conten .box6:hover p {
+  margin-left: 40px;
+}
+#services .boxes .conten .box6:hover span {
+  margin-left: 5px;
+  color: white;
+}
+#services .boxes .medi {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -40px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+#services .boxes .medi .box7 {
+  margin-left: 40px;
+  background-color: rgba(27, 27, 27, 0.0823529412);
+  width: 380px;
+  height: 100px;
+  position: relative;
+  transition: 0.2s ease;
+}
+#services .boxes .medi .box7 span {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  transform: translateX(-100%);
+  font-size: 40px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+#services .boxes .medi .box7 p {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  margin-left: -20px;
+}
+#services .boxes .medi .box7::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#services .boxes .medi .box7:hover {
+  background-color: #E9204F;
+}
+#services .boxes .medi .box7:hover p {
+  margin-left: 40px;
+}
+#services .boxes .medi .box7:hover span {
+  margin-left: 5px;
+  color: white;
+}
+#services .boxes .medi .box8 {
+  margin-left: 40px;
+  background-color: rgba(27, 27, 27, 0.0823529412);
+  width: 380px;
+  height: 100px;
+  position: relative;
+  transition: 0.2s ease;
+}
+#services .boxes .medi .box8 span {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  transform: translateX(-100%);
+  font-size: 40px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+#services .boxes .medi .box8 p {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  margin-left: -20px;
+}
+#services .boxes .medi .box8::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#services .boxes .medi .box8:hover {
+  background-color: #E9204F;
+}
+#services .boxes .medi .box8:hover p {
+  margin-left: 40px;
+}
+#services .boxes .medi .box8:hover span {
+  margin-left: 5px;
+  color: white;
+}
+#services .boxes .medi .box9 {
+  margin-left: 40px;
+  background-color: rgba(27, 27, 27, 0.0823529412);
+  width: 380px;
+  height: 100px;
+  position: relative;
+  transition: 0.2s ease;
+}
+#services .boxes .medi .box9 span {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  transform: translateX(-100%);
+  font-size: 40px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+#services .boxes .medi .box9 p {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  margin-left: -20px;
+}
+#services .boxes .medi .box9::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#services .boxes .medi .box9:hover {
+  background-color: #E9204F;
+}
+#services .boxes .medi .box9:hover p {
+  margin-left: 40px;
+}
+#services .boxes .medi .box9:hover span {
+  margin-left: 5px;
+  color: white;
+}
+#services::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 50px;
+  background-color: #E9204F;
+  left: 50%;
+  top: 80%;
+}
+
+#works {
+  width: 100%;
+  height: 100vh;
+}
+#works h1 {
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 50px;
+  font-size: 15px;
+  color: #E9204F;
+  font-weight: 400;
+}
+#works .letter {
+  position: relative;
+  width: 80%;
+  height: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#works .letter p {
+  font-size: 44px;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#works .letter a {
+  position: absolute;
+  left: 90%;
+  text-decoration: none;
+  padding: 10px 20px;
+  align-items: center;
+  border: 2px solid #E9204F;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 10px;
+  transition: 0.5s ease-in;
+}
+#works .letter a:hover {
+  background-color: #E9204F;
+}
+#works .image {
+  display: flex;
+}
+#works .image .imgbox {
+  position: relative;
+  padding: 10px;
+  width: 480px;
+  height: 480px;
+  margin-left: 50px;
+}
+#works .image .imgbox:hover .overlay {
+  transition: 0.5s;
+  opacity: 1;
+}
+#works .image .imgbox .overlay {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  opacity: 0;
+}
+#works .image .imgbox .overlay p {
+  color: black;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#works .image .imgbox .overlay h4 {
+  color: red;
+  font-size: 14px;
+  font-weight: 800;
+}
+#works .image a {
+  position: absolute;
+  transition: 3s;
+}
+#works .image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: rgba(128, 128, 128, 0.256);
+  opacity: 1;
+  transition: 0.2s;
+}
+#works .image img:hover {
+  opacity: 0.6;
+  width: 102%;
+  height: 102%;
+}
+
+#about {
+  width: 100%;
+  height: 170vh;
+  position: relative;
+  padding-top: 50px;
+}
+#about::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background-color: #E9204F;
+  left: 50%;
+  top: -5%;
+}
+#about .more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+#about .more p {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#about .more h2 {
+  position: absolute;
+  font-size: 15px;
+  padding: 30px;
+  left: 0;
+  top: 40px;
+  color: #E9204F;
+}
+#about .more h5 {
+  color: #7F7F7F;
+  font-size: 15px;
+}
+#about .office {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+#about .office .teamwork {
+  width: 800px;
+  height: 700px;
+  padding-top: 100px;
+  display: flex;
+  margin-left: 100px;
+}
+#about .office .teamwork img {
+  width: 100%;
+  height: 100%;
+}
+#about .office .philosopy {
+  width: 440px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+#about .office .philosopy img {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+#about .flex {
+  display: flex;
+}
+#about .we-are {
+  width: 380px;
+  height: 200px;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#about .we-are p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  color: black;
+}
+#about .we-are h4 {
+  font-size: 22px;
+  margin-top: 30px;
+  color: rgba(27, 27, 27, 0.4392156863);
+}
+
+#clients {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+#clients .img-box {
+  width: 462px;
+  height: 621px;
+}
+#clients .img-box img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#clients .img-box::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 100px;
+  background-color: #E9204F;
+  top: 67%;
+  left: 400pxpx;
+}
+#clients .img-box::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 30px;
+  background-color: #E9204F;
+  top: 80%;
+  left: 362px;
+}
+#clients .textbox {
+  position: relative;
+  margin-left: 80px;
+  margin-top: 100px;
+}
+#clients .textbox::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background-color: rgba(27, 27, 27, 0.1960784314);
+  top: 80%;
+}
+#clients .textbox::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #E9204F;
+  top: -25px;
+}
+#clients .textbox h2 {
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#clients .textbox h4 {
+  margin-top: 30px;
+  color: #E9204F;
+  font-size: 14px;
+  font-weight: 899;
+  font-family: "Times New Roman", Times, serif;
+}
+#clients .textbox p {
+  color: rgba(27, 27, 27, 0.6470588235);
+  font-size: 25px;
+  margin-top: 100px;
+}
+#clients .brandbox {
+  width: 100%;
+  margin: auto;
+  border-top: 1px solid rgba(27, 27, 27, 0.2666666667);
+  margin-top: 90px;
+}
+#clients .brandbox img {
+  padding-top: 30px;
+  margin-left: 55px;
+}
+
+#latest {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+#latest h1 {
+  margin-top: 100px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#latest h3 {
+  margin-top: 20px;
+  color: #E9204F;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#latest .careers {
+  display: flex;
+  width: 490px;
+  height: 490px;
+  position: relative;
+}
+#latest .careers img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+#latest .careers img:hover {
+  filter: grayscale(0);
+  width: 104%;
+  height: 104%;
+}
+
+#letstalk {
+  width: 100%;
+  height: 40vh;
+}
+#letstalk .logopad {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1B1B1B;
+  height: 40vh;
+  align-items: center;
+}
+#letstalk .logopad p {
+  font-size: 40px;
+  color: wheat;
+  font-weight: 800;
+}
+#letstalk .logopad .logos a {
+  border: 1px solid #E9204F;
+  padding: 15px;
+  margin-left: 20px;
+  border-radius: 50%;
+  position: relative;
+}
+#letstalk .logopad .logos a i {
+  color: white;
+}
+#letstalk .logopad a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 20px 20px;
+  border: 2px solid hsl(346, 82%, 52%);
+  position: relative;
+  background-color: #1B1B1B;
+}/*# sourceMappingURL=style.css.map */
